@@ -1,4 +1,4 @@
-import {FC} from "react";
+import {FC, ReactNode} from "react";
 
 enum FontSizes {
   "s" = "text-sm",
@@ -9,6 +9,7 @@ interface TextProps {
   size?: keyof typeof FontSizes;
   span?: boolean;
   bold?: boolean;
+  children: ReactNode;
 }
 export const Text: FC<TextProps> = ({ size = "m", span, bold, children }) => {
   const Tag = span ? "span" : "p";
