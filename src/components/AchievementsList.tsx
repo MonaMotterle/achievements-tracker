@@ -7,7 +7,8 @@ export interface AchievementsListType {
 }
 export const AchievementsList = ({ open, onClose }: AchievementsListType) => {
   const gameName = '';
-  const achievements = [];
+  const achievements: AchievementItemType[] | [] = [];
+  console.log(open)
 
   return (
     <div className="h-96 px-44 py-14 flex-col justify-center items-center gap-14 inline-flex">

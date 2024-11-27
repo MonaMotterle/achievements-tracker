@@ -1,5 +1,5 @@
 import 'tailwindcss/tailwind.css'
-import {AchievementsList, GameList, Header, NewFileUpload} from "./components";
+import {AchievementsList, GameList, Header} from "./components";
 import {useState} from "react";
 
 function App() {

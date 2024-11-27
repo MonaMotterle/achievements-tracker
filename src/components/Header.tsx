@@ -1,7 +1,11 @@
 import {Moon, Sun} from "@phosphor-icons/react";
 import {Title} from "./Title.tsx";
 
-export const Header = ({ isDarkMode, switchColor}) => {
+interface HeaderProps {
+  isDarkMode?: boolean;
+  switchColor: () => void;
+}
+export const Header = ({ isDarkMode, switchColor}: HeaderProps) => {
   return (
     <div className="w-full h-20 p-5 bg-transparent shadow dark:shadow-gray-800 justify-between items-center gap-5 inline-flex">
       <div className="justify-start items-center gap-5 inline-flex">
