@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - feat/gh-pages
+      - main
 
 permissions:
   contents: read
